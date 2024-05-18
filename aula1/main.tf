@@ -1,3 +1,5 @@
+# $env:LOCALSTACK_AUTH_TOKEN="<YOUR_AUTH_TOKEN>"; localstack start
+
 provider "aws" {
   region                      = "us-east-1"
   access_key                  = "mock_access_key"
@@ -43,3 +45,5 @@ resource "aws_s3_bucket_policy" "bucket_policy" {
         ]
     })
 }
+
+
